@@ -1,0 +1,86 @@
+/* *********************************************************** SCREEN START */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: chocolate;
+
+  background: url("images/background.png") center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* *********************************************************** SCREEN END */
+/* *********************************************************** SPEAKERS START */
+.speakers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  pointer-events: none;
+
+  width: fit-content;
+  height: 100%;
+}
+
+.speakers.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.speakers.right > div > img {
+  transform: scaleX(-1);
+}
+
+/* *********************************************************** SPEAKERS END */
+/* *********************************************************** CONTAINER START */
+
+.container {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 35%;
+  height: 44%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 60px;
+
+  background: rgba(0, 77, 110, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(23.25px);
+  border-radius: 20px;
+}
+
+/* for showing only the word in container */
+.container > .word {
+  font-size: 56px;
+  line-height: 68px;
+
+  color: #ffffff;
+}
